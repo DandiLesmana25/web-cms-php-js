@@ -1,7 +1,25 @@
 <?php 
 include "connection.php";
 
-//>>>>>>>>>>>>>>>>>>>SECTION Berita Terkini<<<<<<<<<<<<<<<<<<<
+
+
+//>>>>>>>>>>>>>>>>>>>GET DATA Siswa<<<<<<<<<<<<<<<<<<<
+
+$QueryGetListSiswa = mysqli_query($mysqli, "SELECT id, nama, tanggal_lahir, alamat, jurusan FROM tbl_data_siswa;");
+
+//Notifikasi Jika Gagal Mengambil Data
+if(!$QueryGetListSiswa){
+$message = 'Kesalahan Terjadi Pada Proses Pengambilan Data User';
+echo "<body>".$message."</body>";
+}
+
+
+
+
+
+
+
+//>>>>>>>>>>>>>>>>>>>SECTIOn GEt Berita Terkini<<<<<<<<<<<<<<<<<<<
 
 $QueryGetDataBerita = mysqli_query($mysqli, "SELECT id_berita, judul_berita, isi_berita, image, tanggal_terbit, penulis FROM tbl_berita_terkini");
 
@@ -10,5 +28,16 @@ if(!$QueryGetDataBerita){
     $message = 'Kesalahan Terjadi Pada Proses Pengambilan Data User';
     echo "<body>".$message."</body>";
     }
+  
     
+
+
+    
+//>>>>>>>>>>>>>>>>>>> DATA JUMLAH SISWA <<<<<<<<<<<<<<<<<<<
+
+    $JumlahSiswa = mysqli_query($mysqli, "SELECT COUNT(*) AS jumlah_siswa FROM tbl_data_siswa;");
+    // as == nama kolom seementara
+
+
+
 ?>

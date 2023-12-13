@@ -12,9 +12,6 @@ require_once 'core/process-index.php';
           <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
             <h1>Cerdas, Mandiri, Berkarakter</h1>
             <h2>SMAN 1 Telukjambe Barat</h2>
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <a href="https://dapo.kemdikbud.go.id/sekolah/E446FABEAFBD83384DF6" class="btn-get-started scrollto"><i class="bi bi-database"></i>Dapodik</a>
-            </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
             <img src="assets/img/sma/logo-sman1.png" class="img-fluid animated" alt="" />
@@ -25,6 +22,56 @@ require_once 'core/process-index.php';
     <!-- End Hero -->
 
     <main id="main">
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="content">
+              <h3>Sejarah Berdiri</h3>
+              <p>
+                Sekolah ini ut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere ut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere ut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere ut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facereLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit  Doloribus ut maiores omnis facere ut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facereLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit 
+              </p>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Visi</h4>
+                  <p>Mewujudkan insan Indonesia yang bertaqwa, berbudi pekerti luhur, berbudaya, berwawasan lingkungan, unggul dalam prestasi serta kompeten dalam dunia global</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+                  <h4>Misi</h4>
+            <ul>
+              <li><i class=""></i> Meningkatkan mutu Pendidikan yang mengintegrasikan system nilai agama dan budaya dengan ilmu pengetahuan dan teknologi </li> <br>
+              <li><i class=""></i> Mengembangkan komponen seluruh sekolah secara optimal baik dalam bidang akademis maupun non akademis dan brwawasan lingkungan sehingga mampu bersaing secara global</li><br>
+              <li><i class=""></i> Menumbuhkan budaya gemar membaca dengan program literasi yang didukung Perpustakaan yang lengkap dan berkualitas</li><br>
+              <li><i class=""></i> Mencipkakan sistem informasi manajemen berbasis komputer, ujian berbasis computer dan melaksanakan pembelajaran berbasis teknologi informasi dan komunikasi  </li>
+            </ul>
+                  
+                  
+                </div>
+
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
       <!-- ======= staf Section ======= -->
       <section id="staf" class="team section-bg">
         <div class="container" data-aos="fade-up">
@@ -35,7 +82,7 @@ require_once 'core/process-index.php';
           <div class="row">
             <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/sma/profile-staf.jpg" class="img-fluid" alt="" /></div>
+                <div class="pic"><img src="assets/img/guru/bu-kepsek.png" class="img-fluid" alt="" /></div>
                 <div class="member-info">
                   <h4>Siti Nurasiah, S.Pd., M.Pd.</h4>
                   <span>Kepala Sekolah</span>
@@ -52,7 +99,7 @@ require_once 'core/process-index.php';
 
             <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/sma/profile-staf.jpg"" class="img-fluid" alt="" /></div>
+                <div class="pic"><img src="assets/img/guru/pak-zaini.png"" class="img-fluid" alt="pak hamid" /></div>
                 <div class="member-info">
                   <h4>Zaini ahmad</h4>
                   <span>Wakasek Kesiswaan</span>
@@ -69,7 +116,7 @@ require_once 'core/process-index.php';
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/sma/profile-staf.jpg"" class="img-fluid" alt="" /></div>
+                <div class="pic"><img src="assets/img/guru/pak-hamid2.png"" class="img-fluid" alt="pak hamid" /></div>
                 <div class="member-info">
                   <h4>Abdul Hamid S.Pd., M.Pd.</h4>
                   <span>Wakasek Kurikulum</span>
@@ -85,7 +132,7 @@ require_once 'core/process-index.php';
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/sma/profile-staf.jpg"" class="img-fluid" alt="" /></div>
+                <div class="pic"><img src="assets/img/guru/pak-hajirukman.png"" class="img-fluid" alt="" /></div>
                 <div class="member-info">
                   <h4>H Rukman S.Pd.</h4>
                   <span>Bendahara</span>
@@ -113,21 +160,8 @@ require_once 'core/process-index.php';
             <div class="col-lg-12">
               <div class="row">
                 <!-- siswa Card -->
-                <div class="col-xxl-4 col-md-6">
+                <div class=" col-md-6">
                   <div class="card info-card sales-card">
-                    <div class="filter">
-                      <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                        <li class="dropdown-header text-start">
-                          <h6>Filter</h6>
-                        </li>
-
-                        <li><a class="dropdown-item" href="#">Today</a></li>
-                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                      </ul>
-                    </div>
-
                     <div class="card-body">
                       <h5 class="card-title">
                         Jumlah Peserta Pendidik
@@ -139,7 +173,10 @@ require_once 'core/process-index.php';
                           <i class="bi bi-people"></i>
                         </div>
                         <div class="ps-3">
-                          <h6>145</h6>
+                        <?php $dataSiswa=mysqli_fetch_array($JumlahSiswa);
+                        ?>
+
+                          <h6><?php echo $dataSiswa["jumlah_siswa"];?></h6>
                         </div>
                       </div>
                     </div>
@@ -148,21 +185,8 @@ require_once 'core/process-index.php';
                 <!-- End Siswa Card -->
 
                 <!-- Tenaga Pendidik  -->
-                <div class="col-xxl-4 col-md-6">
+                <div class=" col-md-6">
                   <div class="card info-card sales-card">
-                    <div class="filter">
-                      <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                        <li class="dropdown-header text-start">
-                          <h6>Filter</h6>
-                        </li>
-
-                        <li><a class="dropdown-item" href="#">Today</a></li>
-                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                      </ul>
-                    </div>
-
                     <div class="card-body">
                       <h5 class="card-title">
                         Jumlah Tenaga Pendidik
@@ -194,7 +218,47 @@ require_once 'core/process-index.php';
       </section>
 
       <!-- ======= Prestasi Section ======= -->
-      <section id="prestasi" class="services section-bg">
+            <section id="speakers">
+        <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Prestasi</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste
+              officiis commodi quidem hic quas.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/sma/prestasi.png" alt="Speaker 1" class="img-fluid" />
+                <div class="details">
+                  <h3><a href="speaker-details.html">Brenden Legros</a></h3>
+                  <p>Quas alias incidunt</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/sma/prestasi.png" alt="Speaker 2" class="img-fluid" />
+                <div class="details">
+                  <h3><a href="speaker-details.html">Hubert Hirthe</a></h3>
+                  <p>Consequuntur odio aut</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/sma/prestasi.png" alt="Speaker 3" class="img-fluid" />
+                <div class="details">
+                  <h3><a href="speaker-details.html">Cole Emmerich</a></h3>
+                  <p>Fugiat laborum et</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section id="prestasi" class="services section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Prestasi</h2>
@@ -205,68 +269,40 @@ require_once 'core/process-index.php';
           </div>
 
           <div class="row">
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box">
-                <div class="icon"><i class=""></i></div>
-                <img src="assets/img/sma/prestasi.png" alt="..." class="img-thumbnail" />
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
-            </div>
 
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box">
-                <div class="icon"><i class=""></i></div>
-                <img src="assets/img/sma/prestasi-2.jpg" alt="..." class="img-thumbnail" />
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box">
-                <div class="icon"><i class=""></i></div>
-                <img src="assets/img/sma/prestasi-4.jpg" alt="..." class="img-thumbnail" />
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-xl-3 col-md-4 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
               <div class="icon-box">
                 <div class="icon"><i class=""></i></div>
                 <img src="assets/img/sma/prestasi.png" alt="..." class="img-thumbnail" />
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class=" col-xl-3 col-md-4 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
               <div class="icon-box">
                 <div class="icon"><i class=""></i></div>
                 <img src="assets/img/sma/prestasi.png" alt="..." class="img-thumbnail" />
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-xl-3 col-md-4 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+              <div class="icon-box">
+                <div class="icon"><i class=""></i></div>
+                <img src="assets/img/sma/pramuka1.jpg" alt="..." class="img-thumbnail" />
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
               <div class="icon-box">
                 <div class="icon"><i class=""></i></div>
                 <img src="assets/img/sma/prestasi.png" alt="..." class="img-thumbnail" />
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-              <div class="icon-box">
-                <div class="icon"><i class=""></i></div>
-                <img src="assets/img/sma/prestasi.png" alt="..." class="img-thumbnail" />
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
+          
             </div>
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-              <div class="icon-box">
-                <div class="icon"><i class=""></i></div>
-                <img src="assets/img/sma/prestasi.png" alt="..." class="img-thumbnail" />
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+        
+      </section> -->
       <!-- End Services Section -->
 
       <!-- ======= Services Section ======= -->
@@ -380,12 +416,6 @@ require_once 'core/process-index.php';
                 <div class="details">
                   <h3><a href="eskul-detail.html">Taekwondo</a></h3>
                   <p>Fugiat laborum et</p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -437,16 +467,16 @@ require_once 'core/process-index.php';
               <div class="row g-5">
                 <div class="col-lg-6 border-start custom-border">
                   <div class="post-entry-1">
-                    <a href="berita-detail.html"><img src="assets/img/sma/pramuka3.jpg" alt="" class="img-fluid" /></a>
+                    <a href="berita-detail.php"><img src="assets/img/sma/pramuka3.jpg" alt="" class="img-fluid" /></a>
                     <div class="post-meta"><span class="date"><?php echo $data["tanggal_terbit"]; ?></span> <span class="mx-1">&bullet;</span> <span>Mar 15th '22</span></div>
-                    <h2><a href="berita-detail.html"><?php echo $data["judul_berita"]; ?></a></h2>
+                    <h2><a href="berita-detail.php"><?php echo $data["judul_berita"]; ?></a></h2>
                   </div>
                 </div>
                 <div class="col-lg-6 border-start custom-border">
                   <div class="post-entry-1">
-                    <a href="berita-detail.html"><img src="assets/img/sma/taekwondo3.jpg" alt="" class="img-fluid" /></a>
+                    <a href="berita-detail.php"><img src="assets/img/sma/taekwondo3.jpg" alt="" class="img-fluid" /></a>
                     <div class="post-meta"><span class="date">Sports</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                    <h2><a href="berita-detail.html">Taekwondo melakukan kegiatan blablabla di blblablabla</a></h2>
+                    <h2><a href="berita-detail.php">Taekwondo melakukan kegiatan blablabla di blblablabla</a></h2>
                   </div>
                 </div>
               </div>

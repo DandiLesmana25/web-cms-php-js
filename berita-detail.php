@@ -3,8 +3,6 @@ require_once 'core/process-index.php';
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
