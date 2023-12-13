@@ -57,7 +57,9 @@ require_once '../../../../core/process-index.php'
                  echo "<td>".$row["alamat"]."</td>";
                  echo "<td>".$row["jurusan"]."</td>";
                 //  echo "<td>"<a href="masterUserEdit.php?id=<?= $row["id"]; ubah</a>"</td>";
-                echo "<td><a href='masterUserEdit.php?id=" . $row["id"] . "'>Edit</a></td>";
+                echo "<td><a href='masterUserEdit.php?id=" . $row["id"] . "'>Edit</a> | 
+                <a href='hapus.php?id=" . $row["id"] . "' onclick='return confirm(\"Yakin?\");'>Hapus</a>
+                </td>";
 
                  }
 

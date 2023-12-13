@@ -46,16 +46,6 @@ if ($QueryaddUser) {
 //<<<<<<<<<<<<<<<<<<<<<<<<<< edit >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-function query($query) {
-	global $mysqli;
-	// var_dump($query);die;
-	$result = mysqli_query($mysqli, $query);
-	$rows = [];
-	while( $row = mysqli_fetch_assoc($result) ) {
-		$rows[] = $row;
-	}
-	return $rows;
-}
 
 function edit($data) {
     global $mysqli;
@@ -78,8 +68,15 @@ function edit($data) {
 	mysqli_query($mysqli, $query);
 
 	return mysqli_affected_rows($mysqli);
-
 }
+
+function hapus($id) {
+	global $mysqli;
+	mysqli_query($mysqli, "DELETE FROM tbl_data_siswa WHERE id = $id");
+	return mysqli_affected_rows($mysqli);
+}
+
+
 
 
 ?>
