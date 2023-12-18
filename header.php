@@ -64,7 +64,6 @@
             <li><a class="nav-link scrollto" href="#ekstrakurikuler">Ekstrakurikuler</a></li>
 
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <li><a class="getstarted scrollto" href="https://dapo.kemdikbud.go.id/sekolah/E446FABEAFBD83384DF6">Dapodik</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

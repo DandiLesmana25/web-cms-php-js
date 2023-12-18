@@ -6,17 +6,16 @@ include "../../../../core/connection.php";
 if(isset($_POST['save'])) {
 
     $Nama = mysqli_real_escape_string($mysqli,$_POST['nama']);
-    // $TanggalLahir = mysqli_real_escape_string($mysqli,$_POST['tanggallahir']);
-    $TanggalLahir = date('Y-m-d', strtotime($_POST['tanggallahir']));
-    $Alamat = mysqli_real_escape_string($mysqli,$_POST['alamat']);
-    $Jurusan = mysqli_real_escape_string($mysqli,$_POST['jurusan']);
+    $TanggalMasuk = date('Y-m-d', strtotime($_POST['tanggalmasuk']));
+    $Mapel = mysqli_real_escape_string($mysqli,$_POST['mapel']);
+    $Jabatan = mysqli_real_escape_string($mysqli,$_POST['jabatan']);
 
 
 // $QueryaddUser = "INSERT INTO tbl_data_siswa(nama, tanggal_lahir, alamat, jurusan, ) VALUES ('$Nama', '$TanggalLahir', '$Alamat', '$Jurusan')";
 
-$QueryaddUser = "INSERT INTO tbl_data_siswa(nama, tanggal_lahir, alamat, jurusan) VALUES ('$Nama', '$TanggalLahir', '$Alamat', '$Jurusan')";
+$AddData = "INSERT INTO tbl_data_guru(nama, tanggal_masuk, mapel, jabatan) VALUES ('$Nama', '$TanggalMasuk', '$Mapel', '$Jabatan')";
 
-$result = mysqli_query($mysqli, $QueryaddUser);
+$result = mysqli_query($mysqli, $AddData);
 
 if (!$result) {
     die("Error: " . mysqli_error($mysqli));
@@ -25,16 +24,16 @@ if (!$result) {
 
 
 // jika simpan data berhasil dan gagal
-if ($QueryaddUser) {
+if ($AddData) {
     echo "<script>
           alert('simpan data sukses !');
-		  document.location= '../masterUser/masterUser.php'
+		  document.location= '../masterDataGuru/masterDataGuru.php'
 
           </script>";
 } else {
     echo "<script>
           alert('simpan data Gagal !!!!');
-          document.location= '../masterUser/masterUser.php'
+       
 
           </script>";
 
@@ -53,15 +52,15 @@ function edit($data) {
 
 	$id = $data["id"];
 	$nama = htmlspecialchars($data["nama"]);
-	$tanggallahir = htmlspecialchars($data["tanggallahir"]);
-	$jurusan = htmlspecialchars($data["jurusan"]);
-	$alamat = htmlspecialchars($data["alamat"]);
+	$tanggalmasuk = htmlspecialchars($data["tanggalmasuk"]);
+	$mapel = htmlspecialchars($data["mapel"]);
+	$jabatan = htmlspecialchars($data["jabatan"]);
 
-	$query = "UPDATE tbl_data_siswa SET
+	$query = "UPDATE tbl_data_guru SET
 				nama = '$nama',
-				tanggal_lahir = '$tanggallahir',
-				jurusan = '$jurusan',
-				alamat = '$alamat'
+				tanggal_masuk = '$tanggalmasuk',
+				mapel = '$mapel',
+				jabatan = '$jabatan'
 			  WHERE id = $id
 			";
 
@@ -73,7 +72,7 @@ function edit($data) {
 
 function hapus($id) {
 	global $mysqli;
-	mysqli_query($mysqli, "DELETE FROM tbl_data_siswa WHERE id = $id");
+	mysqli_query($mysqli, "DELETE FROM tbl_data_guru WHERE id = $id");
 	return mysqli_affected_rows($mysqli);
 }
 

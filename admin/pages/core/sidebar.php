@@ -30,23 +30,23 @@
 
         
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="../beritaTerkini/masterBerita.php">
           <i class="bi bi-ticket-perforated"></i>
-          <span>Stok Tiket</span>
+          <span>Berita Terkini</span>
         </a>
       </li><!-- End Profile Page Nav -->
       
       <li class="nav-item">
-        <a class="nav-link collapsed" href="../pembelianTicket/pembelianTicket">
+        <a class="nav-link collapsed" href="../masterDataGuru/masterDataGuru.php">
           <i class="bi bi-bag"></i>
-          <span>Pembelian Tiket</span>
+          <span>Master Data Guru</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="../masterUser/masterUser.php">
           <i class="bi bi-people"></i>
-          <span>Master User</span>
+          <span>Master Data Siswa</span>
         </a>
       </li><!-- End Profile Page Nav -->
       </ul>

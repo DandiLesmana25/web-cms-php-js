@@ -190,7 +190,7 @@ require_once 'core/process-index.php';
                     <div class="card-body">
                       <h5 class="card-title">
                         Jumlah Tenaga Pendidik
-                        <span>| <a href="data-siswa.php" class="btn-get-started scrollto">See More</a></span>
+                        <span>| <a href="data-guru.php" class="btn-get-started scrollto">See More</a></span>
                       </h5>
 
              
@@ -199,7 +199,9 @@ require_once 'core/process-index.php';
                           <i class="bi bi-people"></i>
                         </div>
                         <div class="ps-3">
-                          <h6>145</h6>
+                        <?php $dataGuru=mysqli_fetch_array($JumlahGuru);
+                        ?>
+                          <h6><?php echo $dataGuru["jumlah_guru"];?></h6>
                         </div>
                       </div>
                     </div>
@@ -467,8 +469,10 @@ require_once 'core/process-index.php';
               <div class="row g-5">
                 <div class="col-lg-6 border-start custom-border">
                   <div class="post-entry-1">
-                    <a href="berita-detail.php"><img src="assets/img/sma/pramuka3.jpg" alt="" class="img-fluid" /></a>
-                    <div class="post-meta"><span class="date"><?php echo $data["tanggal_terbit"]; ?></span> <span class="mx-1">&bullet;</span> <span>Mar 15th '22</span></div>
+                  <a href="berita-detail.php">
+                         <img src="assets/img/<?php echo $data["image"]; ?>" alt="" class="img-fluid" />
+                   </a>
+                    <div class="post-meta"><span class="date"><?php echo $data["tanggal_terbit"]; ?></span> <span class="mx-1">&bullet;</span> <span><?php echo $data["penulis"]; ?></span></div>
                     <h2><a href="berita-detail.php"><?php echo $data["judul_berita"]; ?></a></h2>
                   </div>
                 </div>

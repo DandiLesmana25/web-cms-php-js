@@ -2,7 +2,7 @@
 date_default_timezone_set('Asia/Jakarta');
 
 $databaseHost = 'localhost';
-$databaseName = 'db-web-nestbar';
+$databaseName = 'nestbardatabase';
 $databaseUsername = 'root';
 $databasePassword = '';
 

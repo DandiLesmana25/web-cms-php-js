@@ -51,6 +51,7 @@ require_once 'core/process-index.php';
           <div class="row">
             <div class="col-md-9 post-content" data-aos="fade-up">
               <!-- ======= Single Post Content ======= -->
+       
               <div class="single-post">
                 <div class="post-meta"><span class="date">Business</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                 <h1 class="mb-5"><?php echo $data["judul_berita"]; ?></h1>
@@ -61,7 +62,7 @@ require_once 'core/process-index.php';
                 </p>
 
                 <figure class="my-4">
-                  <img src="assets/img/sma/pramuka3.jpg" alt="" class="img-fluid" />
+                  <img src="<?php echo $data["image"]; ?>" alt="" class="img-fluid" />
                   <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odit?</figcaption>
                 </figure> 
                 <p>

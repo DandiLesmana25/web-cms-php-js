@@ -14,6 +14,17 @@ echo "<body>".$message."</body>";
 }
 
 
+//>>>>>>>>>>>>>>>>>>>GET DATA Guru<<<<<<<<<<<<<<<<<<<
+
+$GetDataGuru = mysqli_query($mysqli, "SELECT id, nama, tanggal_masuk, mapel, jabatan FROM tbl_data_guru;");
+
+//Notifikasi Jika Gagal Mengambil Data
+if(!$GetDataGuru){
+$message = 'Kesalahan Terjadi Pada Proses Pengambilan Data User';
+echo "<body>".$message."</body>";
+}
+
+
 
 
 
@@ -33,9 +44,12 @@ if(!$QueryGetDataBerita){
 
 
     
-//>>>>>>>>>>>>>>>>>>> DATA JUMLAH SISWA <<<<<<<<<<<<<<<<<<<
+//>>>>>>>>>>>>>>>>>>> DATA JUMLAH SISWA dan guru  <<<<<<<<<<<<<<<<<<<
 
     $JumlahSiswa = mysqli_query($mysqli, "SELECT COUNT(*) AS jumlah_siswa FROM tbl_data_siswa;");
+    // as == nama kolom seementara
+
+    $JumlahGuru = mysqli_query($mysqli, "SELECT COUNT(*) AS jumlah_guru FROM tbl_data_guru;");
     // as == nama kolom seementara
 
 
