@@ -43,11 +43,20 @@ require_once 'core/process-index.php';
   </head>
 
   <body>
-  <?php $data=mysqli_fetch_array($QueryGetDataBerita);
+  <?php 
+  // $data=mysqli_fetch_array($QueryGetDataBerita);
+//   // ambil data di URL
+       $id = $_GET["id"];
+
+
+       $result=  mysqli_query($mysqli, "SELECT * FROM tbl_berita_terkini WHERE id_berita = $id");
+       $data = mysqli_fetch_assoc($result);
+
+
       ?>
     <main id="main">
       <section class="single-post-content">
-        <div class="container">
+        <div class="container" type="hidden" name="id" value="<?= $data["id_berita"]; ?>">
           <div class="row">
             <div class="col-md-9 post-content" data-aos="fade-up">
               <!-- ======= Single Post Content ======= -->
@@ -55,15 +64,9 @@ require_once 'core/process-index.php';
               <div class="single-post">
                 <div class="post-meta"><span class="date">Business</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                 <h1 class="mb-5"><?php echo $data["judul_berita"]; ?></h1>
-                <p>
-                  <span class="firstcharacter">L</span>orem ipsum dolor sit, amet consectetur adipisicing elit. Ratione officia sed, suscipit distinctio, numquam omnis quo fuga ipsam quis inventore voluptatum recusandae culpa, unde
-                  doloribus saepe labore alias voluptate expedita? Dicta delectus beatae explicabo odio voluptatibus quas, saepe qui aperiam autem obcaecati, illo et! Incidunt voluptas culpa neque repellat sint, accusamus beatae, cumque
-                  autem tempore quisquam quam eligendi harum debitis.
-                </p>
-
                 <figure class="my-4">
-                  <img src="<?php echo $data["image"]; ?>" alt="" class="img-fluid" />
-                  <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odit?</figcaption>
+                  <img src="assets/img/<?php echo $data["image"]; ?>" alt="" class="img-fluid" />
+                  <figcaption>Image berita</figcaption>
                 </figure> 
                 <p>
                 <?php echo $data["isi_berita"]; ?>

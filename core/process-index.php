@@ -39,19 +39,18 @@ if(!$QueryGetDataBerita){
     $message = 'Kesalahan Terjadi Pada Proses Pengambilan Data User';
     echo "<body>".$message."</body>";
     }
-  
-    
-
-
-    
+          
 //>>>>>>>>>>>>>>>>>>> DATA JUMLAH SISWA dan guru  <<<<<<<<<<<<<<<<<<<
 
-    $JumlahSiswa = mysqli_query($mysqli, "SELECT COUNT(*) AS jumlah_siswa FROM tbl_data_siswa;");
-    // as == nama kolom seementara
+$JumlahSiswa = mysqli_query($mysqli, "SELECT COUNT(*) AS jumlah_siswa FROM tbl_data_siswa;");
+// as == nama kolom seementara
 
     $JumlahGuru = mysqli_query($mysqli, "SELECT COUNT(*) AS jumlah_guru FROM tbl_data_guru;");
     // as == nama kolom seementara
-
-
+    
+    
+    
+//>>>>>>>>>>>>>>>>>>> GET DATA ESKUL  <<<<<<<<<<<<<<<<<<<
+$DataEskul = mysqli_query($mysqli, "SELECT id_ekstrakurikuler, nama_ekstrakurikuler, deskripsi, gambar FROM ekstrakurikuler;");
 
 ?>

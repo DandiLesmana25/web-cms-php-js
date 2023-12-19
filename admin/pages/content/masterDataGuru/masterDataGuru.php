@@ -12,7 +12,7 @@ require_once '../../../../core/process-index.php'
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Master User</h1>
+      <h1>Master Data Guru</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>

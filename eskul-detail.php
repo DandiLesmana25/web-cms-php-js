@@ -35,6 +35,16 @@
   </head>
 
   <body>
+  <?php 
+require_once 'core/process-index.php';
+$id = $_GET["id"];
+
+
+$result=  mysqli_query($mysqli, "SELECT * FROM ekstrakurikuler WHERE id_ekstrakurikuler = $id");
+$data = mysqli_fetch_assoc($result);
+
+?>
+
     <main id="main" class="main-page">
       <!-- ======= Speaker Details Sectionn ======= -->
       <section id="speakers-details">
@@ -46,26 +56,20 @@
 
           <div class="row">
             <div class="col-md-6">
-              <img src="assets/img/sma/taekwondo2.jpg" alt="Speaker 1" class="img-fluid" />
+              <img src="assets/img/eskul/<?php echo $data["gambar"]; ?>" alt="ekstrakurikuler" class="img-fluid" />
             </div>
 
             <div class="col-md-6">
               <div class="details">
-                <h2>taekwondo</h2>
+                <h2><?php echo $data["nama_ekstrakurikuler"]; ?></h2>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
-                <p>Voluptatem perferendis sed assumenda voluptatibus. Laudantium molestiae sint. Doloremque odio dolore dolore sit. Quae labore alias ea omnis ex expedita sapiente molestias atque. Optio voluptas et.</p>
-
-                <p>Aboriosam inventore dolorem inventore nam est esse. Aperiam voluptatem nisi molestias laborum ut. Porro dignissimos eum. Tempore dolores minus unde est voluptatum incidunt ut aperiam.</p>
-
-                <p>
-                  Et dolore blanditiis officiis non quod id possimus. Optio non commodi alias sint culpa sapiente nihil ipsa magnam. Qui eum alias provident omnis incidunt aut. Eius et officia corrupti omnis error vel quia omnis velit. In
-                  qui debitis autem aperiam voluptates unde sunt et facilis.
-                </p>
+                <p><?php echo $data["deskripsi"]; ?></p>
+    
               </div>
             </div>
           </div>
@@ -79,37 +83,10 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6 footer-info">
-              <img src="assets/img/logo.png" alt="TheEvenet" />
-              <p>
-                In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad
-                voluptate cupiditate debitis accusamus repellat cumque.
-              </p>
-            </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
 
-            <div class="col-lg-3 col-md-6 footer-contact">
+            <div class="col-lg-6 col-md-6 footer-contact">
               <h4>Contact Us</h4>
               <p>
                 A108 Adam Street <br />
@@ -132,7 +109,7 @@
       </div>
 
       <div class="container">
-        <div class="copyright">&copy; Copyright <strong>TheEvent</strong>. All Rights Reserved</div>
+        <div class="copyright">&copy; Copyright <strong>SMAN 1 Telukjambe BArat</strong>. All Rights Reserved</div>
         <div class="credits">
           <!--
         All the links in the footer should remain intact.

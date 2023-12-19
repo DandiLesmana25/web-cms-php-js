@@ -9,46 +9,38 @@
         </li>
         <!-- End Dashboard Nav -->
 
-        <li class="nav-item">
-          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-menu-button-wide"></i><span>Master</span><i class="bi bi-chevron-down ms-auto"></i> </a>
-          <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="data-tiket.html">
-              <i class="bi bi-circle"></i><span>Data Tiket</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-accordion.html">
-              <i class="bi bi-circle"></i><span>Data Tiket</span>
-            </a>
-          </li>
-          </ul>
-        </li>
-        <!-- End Components Nav -->
-
         <li class="nav-heading">Pages</li>
 
         
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="../ekstrakurikuler/masterEkstrakurikuler.php">
+          <i class="bi bi-ticket-perforated"></i>
+          <span>Ekstrakurikuler</span>
+        </a>
+      </li><!-- End berita Page Nav -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="../beritaTerkini/masterBerita.php">
           <i class="bi bi-ticket-perforated"></i>
           <span>Berita Terkini</span>
         </a>
-      </li><!-- End Profile Page Nav -->
+      </li><!-- End berita Page Nav -->
       
       <li class="nav-item">
         <a class="nav-link collapsed" href="../masterDataGuru/masterDataGuru.php">
           <i class="bi bi-bag"></i>
           <span>Master Data Guru</span>
         </a>
-      </li><!-- End Profile Page Nav -->
+      </li> 
+      <!-- end data guru -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="../masterUser/masterUser.php">
           <i class="bi bi-people"></i>
           <span>Master Data Siswa</span>
         </a>
-      </li><!-- End Profile Page Nav -->
+      </li>
+      <!-- end data siswa -->
+
       </ul>
     </aside>
-    <!-- End Sidebar-->
+   <!-- End Sidebar -->

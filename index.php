@@ -394,60 +394,24 @@ require_once 'core/process-index.php';
             </p>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-md-6">
+          <?php 
+                 $eskul=mysqli_fetch_all($DataEskul, MYSQLI_ASSOC);
+                 foreach ($eskul as $data) {
+                
+
+?>
+              <div class="col-lg-4 col-md-6">
               <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                <img src="assets/img/sma/pramuka1.jpg" alt="Speaker 1" class="img-fluid" />
+                <img src="assets/img/eskul/<?php echo $data["gambar"]; ?>" alt="Speaker 1" class="img-fluid" />
                 <div class="details">
-                  <h3><a href="eskul-detail.html">Pramuka</a></h3>
-                  <p>Quas alias incidunt</p>
+                  <h3><a href="eskul-detail.php?id=<?php echo $data['id_ekstrakurikuler'];?>"><?php echo $data["nama_ekstrakurikuler"]; ?></a></h3>
+                  <p>Click Judul untuk Melihat Detail</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/sma/pramuka2.jpg" alt="Speaker 2" class="img-fluid" />
-                <div class="details">
-                  <h3><a href="eskul-detail.html">PMR</a></h3>
-                  <p>Consequuntur odio aut</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/img/sma/taekwondo.jpg" alt="Speaker 3" class="img-fluid" />
-                <div class="details">
-                  <h3><a href="eskul-detail.html">Taekwondo</a></h3>
-                  <p>Fugiat laborum et</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                <img src="assets/img/sma/taekwondo2.jpg" alt="Speaker 4" class="img-fluid" />
-                <div class="details">
-                  <h3><a href="eskul-detail.html">Taekwondo</a></h3>
-                  <p>Debitis iure vero</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/sma/pramuka3.jpg" alt="Speaker 5" class="img-fluid" />
-                <div class="details">
-                  <h3><a href="eskul-detail.html">Pramuka</a></h3>
-                  <p>Qui molestiae natus</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/img/sma/pramuka1.jpg" alt="Speaker 6" class="img-fluid" />
-                <div class="details">
-                  <h3><a href="eskul-detail.html">Broadcasting</a></h3>
-                  <p>Non autem dicta</p>
-                </div>
-              </div>
-            </div>
+                <?php
+                 }
+               ?>
           </div>
         </div>
       </section>
@@ -458,8 +422,7 @@ require_once 'core/process-index.php';
       </div>
       <!-- End Page Title -->
 
-      <?php $data=mysqli_fetch_array($QueryGetDataBerita);
-      ?>
+
 
       <!-- ======= Post Grid Section ======= -->
       <section id="posts" class="posts">
@@ -467,22 +430,25 @@ require_once 'core/process-index.php';
           <div class="row g-5">
             <div class="col-lg-12">
               <div class="row g-5">
+              <?php 
+                 $berita=mysqli_fetch_all($QueryGetDataBerita, MYSQLI_ASSOC);
+                 foreach ($berita as $data) {
+                
+
+?>
                 <div class="col-lg-6 border-start custom-border">
                   <div class="post-entry-1">
-                  <a href="berita-detail.php">
+                  <!-- <a href="berita-detail.php?id={$data['id_berita']}"> -->
+                  <a href="berita-detail.php?id=<?php echo $data['id_berita']; ?>">
                          <img src="assets/img/<?php echo $data["image"]; ?>" alt="" class="img-fluid" />
                    </a>
                     <div class="post-meta"><span class="date"><?php echo $data["tanggal_terbit"]; ?></span> <span class="mx-1">&bullet;</span> <span><?php echo $data["penulis"]; ?></span></div>
-                    <h2><a href="berita-detail.php"><?php echo $data["judul_berita"]; ?></a></h2>
+                    <h2><a href="berita-detail.php?id=<?php echo $data['id_berita'];?>"><?php echo $data["judul_berita"]; ?></a></h2>
                   </div>
                 </div>
-                <div class="col-lg-6 border-start custom-border">
-                  <div class="post-entry-1">
-                    <a href="berita-detail.php"><img src="assets/img/sma/taekwondo3.jpg" alt="" class="img-fluid" /></a>
-                    <div class="post-meta"><span class="date">Sports</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                    <h2><a href="berita-detail.php">Taekwondo melakukan kegiatan blablabla di blblablabla</a></h2>
-                  </div>
-                </div>
+                <?php
+                 }
+               ?>
               </div>
             </div>
           </div>

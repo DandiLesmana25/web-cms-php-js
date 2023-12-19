@@ -56,11 +56,11 @@ if(!$berita){
 <main id="main" class="main">
 
 <div class="pagetitle">
-  <h1>Master User</h1>
+  <h1>Master Data Berita</h1>
   <nav>
 	<ol class="breadcrumb">
 	  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-	  <li class="breadcrumb-item active">Master Data Guru</li>
+	  <li class="breadcrumb-item active">Master Data Berita</li>
 	</ol>
   </nav>
 </div><!-- End Page Title -->
